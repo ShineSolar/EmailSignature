@@ -1,0 +1,184 @@
+$shine-orange: #ff6900; // Shine Brand Orange
+$shine-brand-blue: #485d6c; // Shine Brand Blue
+$shine-light-orange: #f56500; // shine light orange
+$shine-dark-orange: #b34900; // Shine dark orange
+$shine-dark-gray: #555555; // The dark gray from the footer
+$shine-light-gray: #7a7a7a; // The light gray shade
+$shine-blue: #303d46; // Deep complimentary blue
+$red: red;
+$green: #90c05c;
+$heavy-font: 'Fjalla One', sans-serif;
+$main-font: 'Rubik', sans-serif;
+$top-level-width: 95%;
+$border-radius: 2px;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	font-family: $main-font;
+	font-weight: 500;
+	&:focus {
+		outline: none;
+	}
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #f3f4f5;
+}
+
+main {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+h1 {
+	font-family: $heavy-font;
+	color: $shine-brand-blue;
+	height: 42px;
+	font-size: 34px;
+	line-height: 39px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+p {
+	color: $shine-brand-blue;
+	text-align: center;
+	max-width: 95%;
+}
+
+
+header {
+  width: 100%;
+  height: 70px;
+  border-radius: 2px;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 45px;
+  img {
+  	margin-left: 30px;
+  	max-height: 30px;
+  	width: auto;
+  }
+}
+
+h1 {
+  font-family: $heavy-font;
+  font-size: 38px;
+  text-align: center;
+  color: $shine-orange;
+}
+
+form {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	margin-top: 50px;
+	width: 100%;
+}
+
+label {
+	color: $shine-brand-blue;
+	font-size: 14px;
+	display: flex;
+	height: auto;
+	flex-flow: column nowrap;
+	cursor: pointer;
+	max-width: 400px;
+	width: 95%;
+	margin-bottom: 20px;
+	input, select {
+		height: 50px;
+		max-width: 400px;
+		border-radius: $border-radius;
+		font-size: 16px;
+		border: none;
+	//	box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+		margin-top: 5px;
+		background-color: #fff;
+		text-indent: 15px;
+		color: $shine-light-gray;
+		& ~ span {
+			opacity: 0;
+			color: $shine-dark-orange;
+			font-size: 14px;
+			margin-top: 3px;
+			transition: opacity .1s;
+			cursor: auto;
+		}
+		&::placeholder { color: #d3d8dc; text-indent: 15px; font-size: 16px;}
+		&::-webkit-input-placeholder { color: #d3d8dc; text-indent: 15px; font-size: 16px; }
+		&:-ms-input-placeholder { color: #d3d8dc; text-indent: 15px; font-size: 16px; }
+		&::-ms-input-placeholder { color: #d3d8dc; text-indent: 15px; font-size: 16px; }
+		&:focus {
+			&::placeholder { color: transparent; }
+			&::-webkit-input-placeholder { color: transparent; }
+			&:-ms-input-placeholder { color: transparent; }
+			&::-ms-input-placeholder { color: transparent; }
+			&:invalid {
+				box-shadow: 0 2px 0 0 $shine-dark-orange;
+				& ~ span {
+					display: inline-block;
+					opacity: 1;
+				}
+			}			
+		}
+	}
+}
+
+form button {
+	width: 95%;
+	max-width: 400px;
+	height: 50px;
+	border-radius: $border-radius;
+	font-size: 18px;
+	background-color: $shine-orange;
+	color: white;
+	border: none;
+	box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.15);
+	margin-top: 23px;
+	cursor: pointer;
+	transition: .1s all;
+	&:hover { background-color: $shine-light-orange; }
+	&:active {
+		box-shadow: none;
+		height: 48px;
+		margin-top: 25px;
+		background-color: $shine-light-orange;
+	}
+}
+
+select option {
+	color: #d3d8dc;
+}
+
+#formErrorContainer {
+	color: $shine-dark-orange;
+	max-width: 400px;
+	width: 95%;
+	margin: 10px 0;
+	&:empty {
+		display: none;
+	}
+}
+
+.login-loader {
+	height: 50px;
+	margin-top: 23px;
+}
+
+.change-input-field-link {
+	color: $shine-blue;
+}

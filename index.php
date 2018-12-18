@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-require_once 'model.php';
+require_once 'model/model.php';
 
 switch($_SERVER['REQUEST_METHOD']) {
 	case 'POST':
@@ -13,10 +13,10 @@ switch($_SERVER['REQUEST_METHOD']) {
 		$mailToEmail = 'mailto:'.$emailAddress;
 		$logoInput = filter_input(INPUT_POST, 'logo', FILTER_SANITIZE_STRING);
 		$logo = ($logoInput === 'home') ? 'https://www.shinesolar.com/image_hosting/email-logo-shine-home.png' : 'https://www.shinesolar.com/image_hosting/email-logo.png';
-		include_once 'template.php';
+		include_once 'view/template.php';
 	break;
 
 	default:
-		include_once 'page.php';
+		include_once 'view/page.php';
 	break;
 }

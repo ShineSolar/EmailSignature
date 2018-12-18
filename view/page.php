@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Rubik" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/style/style.css">
 	<title>Make your own email signature</title>
 
 	<!-- Old Style SEO/IE Tags -->
@@ -19,7 +19,7 @@
 <body>
 
 	<header>
-		<img src='logo.svg' alt='Shine Solar Logo' title='Shine Solar Logo'>
+		<img src='/assets/logo.svg' alt='Shine Solar Logo' title='Shine Solar Logo'>
 	</header>
 
 	<main>

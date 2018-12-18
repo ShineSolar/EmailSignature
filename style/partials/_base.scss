@@ -1,0 +1,42 @@
+$shine-orange: #ff6900; // Shine Brand Orange
+$shine-brand-blue: #485d6c; // Shine Brand Blue
+$shine-light-orange: #f56500; // shine light orange
+$shine-dark-orange: #b34900; // Shine dark orange
+$shine-dark-gray: #555555; // The dark gray from the footer
+$shine-light-gray: #7a7a7a; // The light gray shade
+$shine-blue: #303d46; // Deep complimentary blue
+$red: red;
+$green: #90c05c;
+$heavy-font: 'Fjalla One', sans-serif;
+$main-font: 'Rubik', sans-serif;
+$top-level-width: 95%;
+$border-radius: 2px;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	font-family: $main-font;
+	font-weight: 500;
+	&:focus {
+		outline: none;
+	}
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #f3f4f5;
+}
+
+main {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 300px;
+}

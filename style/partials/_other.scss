@@ -1,0 +1,38 @@
+h1 {
+	font-family: $heavy-font;
+    color: $shine-orange;
+	height: 42px;
+	font-size: 34px;
+	line-height: 39px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+p {
+	color: $shine-brand-blue;
+	text-align: center;
+	max-width: 95%;
+	margin-bottom: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: $shine-orange;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  border-radius: 2px;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+  img {
+  	margin-left: 30px;
+  	max-height: 30px;
+  	width: auto;
+  }
+}

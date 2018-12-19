@@ -11,7 +11,7 @@ if (Http::methodIs('POST')) {
 		Http::requestTypeIs('application/x-www-form-urlencoded');
 	} catch (Exception $ex) {
 		$error = 'Something went wrong.';
-		Http::displayPage('view/page.php');
+		include_once 'view/page.php';
 		exit;
 	}
 
@@ -21,7 +21,7 @@ if (Http::methodIs('POST')) {
 		$name = $HandleName->plainString();
 	} catch (Exception $ex) {
 		$error = $ex->getMessage();
-		Http::displayPage('view/page.php');
+		include_once 'view/page.php';
 		exit;
 	}
 
@@ -31,7 +31,7 @@ if (Http::methodIs('POST')) {
 		$position = $HandlePosition->plainString();
 	} catch (Exception $ex) {
 		$error = $ex->getMessage();
-		Http::displayPage('view/page.php');
+		include_once 'view/page.php';
 		exit;
 	}
 
@@ -45,7 +45,7 @@ if (Http::methodIs('POST')) {
 		}
 	} catch (Exception $ex) {
 		$error = $ex->getMessage();
-		Http::displayPage('view/page.php');
+		include_once 'view/page.php';
 		exit;
 	}
 
@@ -59,7 +59,7 @@ if (Http::methodIs('POST')) {
 		}
 	} catch (Exception $ex) {
 		$error = $ex->getMessage();
-		Http::displayPage('view/page.php');
+		include_once 'view/page.php';
 		exit;
 	}
 
@@ -71,7 +71,7 @@ if (Http::methodIs('POST')) {
 		$emailAddress = $emailAddress['email'];
 	} catch (Exception $ex) {
 		$error = $ex->getMessage();
-		Http::displayPage('view/page.php');
+		include_once 'view/page.php';
 		exit;
 	}
 
@@ -83,7 +83,7 @@ if (Http::methodIs('POST')) {
 		$logo = $logo['img'];
 	} catch (Exception $ex) {
 		$error = $ex->getMessage();
-		Http::displayPage('view/page.php');
+		include_once 'view/page.php';
 		exit;
 	}
 
@@ -91,7 +91,7 @@ if (Http::methodIs('POST')) {
 
 } else {
 
-	Http::displayPage('view/page.php');
+	include_once 'view/page.php';
 
 }
 

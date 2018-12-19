@@ -41,6 +41,8 @@
 		<!-- Start main form -->
 		<form method='POST' action='.' enctype="application/x-www-form-urlencoded">
 
+			<p id="formErrorContainer"><?php if (isset($error)) echo $error; ?></p>
+
 			<label for='name'>Name
 				<input type='text' id='name' name='name' title='Enter name' placeholder='e.g. John Doe' pattern='^([^0-9]*)$' required>
 				<span>Enter valid name</span>

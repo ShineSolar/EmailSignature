@@ -26,15 +26,13 @@ class HandleData {
 	public function phone() : array {
 
 		$sanitizedPhone = filter_var($this->data, FILTER_SANITIZE_STRING);
+		$sanitizedPhone = (substr($sanitizedPhone, 0, 1) === '1') ? substr($sanitizedPhone, 1) : $sanitizedPhone;
 
 		if (self::checkForShinePhone($sanitizedPhone)) {
 			return ['phone' => '844.80.SHINE', 'tel_link' => 'tel:8448074463'];
 		}
 
 		$sanitizedPhone = preg_replace('/[^0-9]/', '', $sanitizedPhone);
-		if (substr($sanitizedPhone, 0, 1) === '1') {
-			$sanitizedPhone = substr($sanitizedPhone, 1);
-		}
 
 		if (strlen($sanitizedPhone) !== 10) {
 			throw new Exception('Please provide a valid phone number');

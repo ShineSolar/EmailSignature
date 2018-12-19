@@ -32,7 +32,7 @@
 		<?php if(!empty($officePhone)) : ?>
 		<tr>
 			<td colspan="2" style="padding-bottom: 2px; color: #ffffff; font-size: 15px; font-weight: 400; line-height: 19px; font-family: trebuchet ms, sans-serif;">
-				<a href=<?=HandleData::output($officeTelPhone)?> style="color: #ffffff; text-decoration:none !important;">
+				<a href=<?=HandleData::output($officeTelPhone)?> style="color: #7D8D9A; text-decoration:none !important;">
 					<span style="color:#B1BBC2 !important; font-family: trebuchet ms, sans-serif;">Office: </span><span style="color:#7D8D9A !important; font-family: trebuchet ms, sans-serif;"><?=HandleData::output($officePhone)?></span>
 				</a>
 			</td>
@@ -44,7 +44,7 @@
 		<?php if(!empty($mobilePhone)) : ?>
 		<tr>
 			<td colspan="2" style="padding-bottom: 2px; color: #ffffff; font-size: 15px; font-weight: 400; line-height: 19px; font-family: trebuchet ms, sans-serif;">
-				<a href=<?=HandleData::output($mobileTelPhone)?> style="color: #ffffff; text-decoration:none !important;">
+				<a href=<?=HandleData::output($mobileTelPhone)?> style="color: #7D8D9A; text-decoration:none !important;">
 					<span style="color:#B1BBC2 !important; font-family: trebuchet ms, sans-serif;">Mobile: </span><span style="color:#7D8D9A !important; font-family: trebuchet ms, sans-serif;"><?=HandleData::output($mobilePhone)?></span>
 				</a>
 			</td>
@@ -55,7 +55,7 @@
 		<!-- Email Address Row -->
 		<tr>
 			<td colspan="2" style="padding-bottom: 4px; color: #ffffff; font-size: 15px; font-weight: 400; line-height: 19px; font-family: trebuchet ms, sans-serif; text-decoration:none;">
-				<a href=<?=HandleData::output($mailToEmail)?> style="color: #ffffff; text-decoration-color:#ffffff !important; text-decoration:none !important;">
+				<a href=<?=HandleData::output($mailToEmail)?> style="color: #7D8D9A; text-decoration-color:#ffffff !important; text-decoration:none !important;">
 					<span style="color:#B1BBC2 !important; font-family: trebuchet ms, sans-serif;">Email: </span><span style="color:#7D8D9A !important; font-family: trebuchet ms, sans-serif;"><?=HandleData::output($emailAddress)?></span>
 				</a>
 			</td>

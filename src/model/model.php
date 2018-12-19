@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-class HandleData {
+final class HandleData {
 
 	public $data;
 
@@ -55,7 +55,7 @@ class HandleData {
 	public function logo() : array {
 		$sanitizedLogoInput = filter_var($this->data, FILTER_SANITIZE_STRING);
 		if ($sanitizedLogoInput === 'home') {
-			return ['img' => 'https://signatures.shinesolar.com/assets/logos/shine-home-email.png', 'link' => 'https://shinesolar.com/reduce-consumption'];
+			return ['img' => 'https://signatures.shinesolar.com/assets/logos/shine-home-email.png', 'link' => 'https://shinesolar.com'];
 		} else {
 			return ['img' => 'https://signatures.shinesolar.com/assets/logos/shine-solar-email.png', 'link' => 'https://shinesolar.com'];
 		}

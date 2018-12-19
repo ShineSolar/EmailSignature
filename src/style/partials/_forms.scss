@@ -76,8 +76,11 @@ form button {
 	}
 }
 
-select:invalid {
-	color: #d3d8dc;
+select {
+	cursor: pointer;
+	&:invalid {
+		color: #d3d8dc;
+	}
 }
 
 #formErrorContainer {

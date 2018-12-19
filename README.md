@@ -19,3 +19,11 @@ Our versioning scheme goes like this: Major.Minor.Patch
 ## Authors
 * **Adam McGurk** - *Development* 
 * **Nic Moseley** - *UX Design*
+
+## TODOs
+
+**UI/UX** - 
+**Frontend Code** -
+**Backend Code** - 
+**Feature Wishlist** -
+**Server Config** -

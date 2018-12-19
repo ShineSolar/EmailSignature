@@ -13,7 +13,9 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for more information on our reque
 Our versioning scheme goes like this: Major.Minor.Patch
 
 **Major** - These are major feature changes or whole application changes. This won't happen too often
+
 **Minor** - These are minor feature changes or major bug fixes, these will probably be the most frequent releases.
+
 **Patch** - These are small changes. These are just routine bugs being fixed and/or code refactoring.
 
 ## Authors
@@ -22,8 +24,12 @@ Our versioning scheme goes like this: Major.Minor.Patch
 
 ## TODOs
 
-**UI/UX** - 
-**Frontend Code** -
-**Backend Code** - 
-**Feature Wishlist** -
-**Server Config** -
+* **UI/UX** - 
+
+* **Frontend Code** -
+
+* **Backend Code** - 
+
+* **Feature Wishlist** -
+
+* **Server Config** -

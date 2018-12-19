@@ -18,6 +18,19 @@ p {
 a {
 	text-decoration: none;
 	color: $shine-orange;
+  &#videoLink {
+    &::before {
+      content: '';
+      background-image: url(/assets/video-icon.svg);
+      height: 19px;
+      width: 23px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      position: relative;
+      top: 3px;
+      right: 5px;
+    }
+  }
 }
 
 header {

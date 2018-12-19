@@ -31,7 +31,7 @@ label {
 			font-size: 14px;
 			margin-top: 3px;
 			transition: all .1s;
-			cursor: auto;
+			cursor: auto; 
 		}
 		&::placeholder { color: #d3d8dc; text-indent: 15px; font-size: 16px;}
 		&::-webkit-input-placeholder { color: #d3d8dc; text-indent: 15px; font-size: 16px; }
@@ -42,14 +42,14 @@ label {
 			&::-webkit-input-placeholder { color: transparent; }
 			&:-ms-input-placeholder { color: transparent; }
 			&::-ms-input-placeholder { color: transparent; }
-			&:invalid {
+/*			&:invalid {
 				box-shadow: 0 2px 0 0 $shine-dark-orange;
 				& ~ span {
 					display: inline-block;
 					opacity: 1;
 					margin-bottom: 5px;
 				}
-			}			
+			}	*/		
 		}
 	}
 }

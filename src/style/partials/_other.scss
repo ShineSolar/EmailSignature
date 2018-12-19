@@ -8,6 +8,15 @@ h1 {
 	margin-bottom: 15px;
 }
 
+.expository {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 p {
 	color: $shine-brand-blue;
 	text-align: center;

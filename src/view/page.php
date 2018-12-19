@@ -26,16 +26,17 @@
 
 		<!-- 
 			Start expository section 
-			TODO: Put this in a section tag and style it appropriately
 			TODO: Progressively add service worker
 			TODO: Put <head /> stuff in a head.php file
 			Yeah, I put my HTML todos in HTML comments. What up :)
 			If you're reading this, check out the GitHub repository at https://github.com/ShineSolar/EmailSignature - it's got all the source code!
 		-->
-		<h1>Create your email signature</h1>
-		<p>Enter the information below as it should appear on your email signature.</p>
-		<p>Your HTML email signature will be generated. Just copy and paste it into your email signature editor.</p>
-		<p><a href='https://www.youtube.com/watch?v=2wJQydApwHE' id='videoLink' rel='noopener' target='_blank'>Video Tutorial - How to Create Your Email Signature</a></p>
+		<section class='expository'>
+			<h1>Create your email signature</h1>
+			<p>Enter the information below as it should appear on your email signature.</p>
+			<p>Your HTML email signature will be generated. Just copy and paste it into your email signature editor.</p>
+			<p><a href='https://www.youtube.com/watch?v=2wJQydApwHE' id='videoLink' rel='noopener' target='_blank'>Video Tutorial - How to Create Your Email Signature</a></p>
+		</section>
 		<!--/ End Expository section -->
 
 		<!-- Start main form -->

@@ -26,6 +26,8 @@ Our versioning scheme goes like this: Major.Minor.Patch
 
 * **UI/UX** - 
 
+* - 
+
 * **Frontend Code** -
 
 * **Backend Code** - 

@@ -18,7 +18,7 @@
 			<h1>Create your email signature</h1>
 			<p>Enter the information below as it should appear on your email signature.</p>
 			<p>Your HTML email signature will be generated. Just copy and paste it into your email signature editor.</p>
-			<p><a href='https://www.youtube.com/watch?v=2wJQydApwHE' id='videoLink' rel='noopener' target='_blank'>Video Tutorial - How to Create Your Email Signature</a></p>
+			<p><a href='https://www.youtube.com/watch?v=5pGRWepi5TM' id='videoLink' rel='noopener' target='_blank'>Video Tutorial - How to Create Your Email Signature</a></p>
 		</section>
 		<!--/ End Expository section -->
 

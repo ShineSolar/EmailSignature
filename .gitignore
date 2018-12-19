@@ -2,4 +2,7 @@
 /.sass-cache
 style.css.map
 .DS_Store
+composer.json
+composer.lock
+/vendor
 /src/style/.sass-cache

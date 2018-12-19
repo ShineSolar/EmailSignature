@@ -1,20 +1,4 @@
-<!doctype html>
-<html lang='en-us' dir='ltr'>
-
-<head>
-
-	<!-- Base Tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Rubik" rel="stylesheet">
-	<link rel="stylesheet" href="/style/style.css">
-	<title>Make your own email signature</title>
-
-	<!-- Old Style SEO/IE Tags -->
-	<meta name="description" content="This is the email signature page!">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-
-</head>
+<?php include_once 'html_includes/head.php'; ?>
 
 <body>
 
@@ -27,7 +11,6 @@
 		<!-- 
 			Start expository section 
 			TODO: Progressively add service worker
-			TODO: Put <head /> stuff in a head.php file
 			Yeah, I put my HTML todos in HTML comments. What up :)
 			If you're reading this, check out the GitHub repository at https://github.com/ShineSolar/EmailSignature - it's got all the source code!
 		-->

@@ -1,3 +1,4 @@
+// Adding the error validation
 const inputs = document.querySelectorAll('input, select');
 const inputLength = inputs.length;
 

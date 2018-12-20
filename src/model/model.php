@@ -6,7 +6,10 @@ final class HandleData {
 	public $data;
 
 	// Setting the data
-	public function __construct(string $data) {
+	public function __construct(string $data, bool $required = false) {
+		if ($required && empty($data)) {
+			throw new Exception('Please fill in all required fields');
+		}
 		$this->data = $data;
 	}
 

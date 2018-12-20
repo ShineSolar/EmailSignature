@@ -59,6 +59,22 @@ h1 {
   margin-bottom: 15px;
 }
 
+button, a.button {
+  width: 95%;
+  max-width: 400px;
+  height: 50px;
+  border-radius: $border-radius;
+  font-size: 18px;
+  background-color: $shine-orange;
+  color: white;
+  border: none;
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.15);
+  margin-top: 23px;
+  cursor: pointer;
+  transition: .1s all;
+  &:hover { background-color: $shine-light-orange; }
+}
+
 .no-mobile {
   width: 100%;
   display: none;
@@ -66,4 +82,13 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  .button {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-right: 5px;
+    }
+  }
 }

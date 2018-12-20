@@ -75,5 +75,7 @@
 	</table>
 	<!--/ End Email Template -->
 
+	<?php include_once 'html_includes/mobile_checker.php'; ?>
+
 </body>
 </html>

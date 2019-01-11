@@ -58,9 +58,9 @@ final class HandleData {
 	public function logo() : array {
 		$sanitizedLogoInput = filter_var($this->data, FILTER_SANITIZE_STRING);
 		if ($sanitizedLogoInput === 'home') {
-			return ['img' => 'https://signatures.shinesolar.com/assets/logos/shine-home-email.png', 'link' => 'https://shinesolar.com'];
+			return ['img' => 'https://signatures.shinesolar.com/assets/logos/v2/shine-home-email.png', 'link' => 'https://shinesolar.com'];
 		} else {
-			return ['img' => 'https://signatures.shinesolar.com/assets/logos/shine-solar-email.png', 'link' => 'https://shinesolar.com'];
+			return ['img' => 'https://signatures.shinesolar.com/assets/logos/v2/shine-solar-email.png', 'link' => 'https://shinesolar.com'];
 		}
 	}
 

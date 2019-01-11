@@ -132,19 +132,19 @@ final class HandleDataTest extends TestCase {
 
     	$TestShineHomeLogo = new HandleData('home');
     	$this->assertEquals(
-    		['img' => 'https://signatures.shinesolar.com/assets/logos/shine-home-email.png', 'link' => 'https://shinesolar.com'],
+    		['img' => 'https://signatures.shinesolar.com/assets/logos/v2/shine-home-email.png', 'link' => 'https://shinesolar.com'],
     		$TestShineHomeLogo->logo()
     	);
 
     	$TestShineSolarLogo = new HandleData('solar');
     	$this->assertEquals(
-    		['img' => 'https://signatures.shinesolar.com/assets/logos/shine-solar-email.png', 'link' => 'https://shinesolar.com'],
+    		['img' => 'https://signatures.shinesolar.com/assets/logos/v2/shine-solar-email.png', 'link' => 'https://shinesolar.com'],
     		$TestShineSolarLogo->logo()
     	);
 
     	$TestShineSolarLogo = new HandleData('this can be any other string and it will return me the shine solar logo');
     	$this->assertEquals(
-    		['img' => 'https://signatures.shinesolar.com/assets/logos/shine-solar-email.png', 'link' => 'https://shinesolar.com'],
+    		['img' => 'https://signatures.shinesolar.com/assets/logos/v2/shine-solar-email.png', 'link' => 'https://shinesolar.com'],
     		$TestShineSolarLogo->logo()
     	);
 

@@ -25,4 +25,9 @@
 	<meta name="description" content="This is the email signature page!">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
+	<!-- Icon links -->
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+	<link rel="icon" type="image/png" href="/favicon.png" />
+	<link rel="manifest" href="/manifest.json">
+
 </head>

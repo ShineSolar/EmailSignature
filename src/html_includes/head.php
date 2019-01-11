@@ -28,6 +28,11 @@
 	<!-- Icon links -->
 	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 	<link rel="icon" type="image/png" href="/favicon.png" />
+
+	<!-- App tags -->
 	<link rel="manifest" href="/manifest.json">
+	<meta name="theme-color" content="#f3f4f5">
+	<meta name="application-name" content="Shine Solar Email Signature Builder">
+	<meta name="apple-mobile-web-app-title" content="Shine Solar Email Signature Builder">
 
 </head>

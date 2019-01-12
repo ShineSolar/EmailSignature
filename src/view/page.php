@@ -18,7 +18,9 @@
 			<h1>Create your email signature</h1>
 			<p>Enter the information below as it should appear on your email signature.</p>
 			<p>Your HTML email signature will be generated. Just copy and paste it into your email signature editor.</p>
-			<p><a href='https://www.youtube.com/watch?v=5pGRWepi5TM' title='Watch the video tutorial!' id='videoLink' rel='noopener' target='_blank'>Video Tutorial - How to Create Your Email Signature</a></p>
+			<p>
+				<a href='https://www.youtube.com/watch?v=5pGRWepi5TM' title='Watch the video tutorial!' id='videoLink' rel='noopener' target='_blank'>Video Tutorial - How to Create Your Email Signature</a>
+			</p>
 		</section>
 		<!--/ End Expository section -->
 
@@ -48,7 +50,7 @@
 			</label>
 
 			<label for='email'>Work Email Address
-				<input type='email' id='email' name='email' title='Enter email address' placeholder='e.g. email@shinesolar.com' required>
+				<input type='email' id='email' name='email' title='Enter email address' placeholder='e.g. email@shinesolar.com' pattern='^[A-Za-z0-9._%+-]+@shinesolar.com$' required>
 				<span>Enter valid email address</span>
 			</label>
 

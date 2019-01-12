@@ -50,8 +50,8 @@
 			</label>
 
 			<label for='email'>Work Email Address
-				<input type='email' id='email' name='email' title='Enter email address' placeholder='e.g. email@shinesolar.com' pattern='^[A-Za-z0-9._%+-]+@shinesolar.com$' required>
-				<span>Enter valid email address</span>
+				<input type='email' id='email' name='email' title='Enter Shine Solar email address' placeholder='e.g. email@shinesolar.com' pattern='^[A-Za-z0-9._%+-]+@shinesolar.com$' required>
+				<span>Enter valid Shine Solar email address</span>
 			</label>
 
 			<label for='logo'>Logo (Shine Solar or Shine Home Energy Solutions)

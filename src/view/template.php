@@ -10,6 +10,7 @@
 		Yeah, I put my HTML todos in HTML comments. What up :)
 		If you're reading this, check out the GitHub repository at https://github.com/ShineSolar/EmailSignature - it's got all the source code!
 	-->
+	
 	<table cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;">
 	
 		<!-- Name Row -->

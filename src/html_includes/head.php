@@ -19,7 +19,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Rubik" rel="stylesheet">
 	<link rel="stylesheet" href="/style/style.css">
-	<title>Make your own email signature</title>
+	<title><?=$pageTitle?></title>
 
 	<!-- Old Style SEO/IE Tags -->
 	<meta name="description" content="This is the email signature page!">
@@ -27,10 +27,10 @@
 
 	<!-- Icon links -->
 	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-	<link rel="icon" type="image/png" href="/favicon.png" />
+	<link rel="icon" href="/favicon.png" type="image/png">
 
 	<!-- App tags -->
-	<link rel="manifest" href="/manifest.json">
+	<link rel="manifest" href="/manifest.webmanifest">
 	<meta name="theme-color" content="#f3f4f5">
 	<meta name="application-name" content="Shine Solar Email Signature Builder">
 	<meta name="apple-mobile-web-app-title" content="Shine Solar Email Signature Builder">

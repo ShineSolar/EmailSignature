@@ -87,10 +87,13 @@ if (Http::methodIs('POST')) {
 		exit;
 	}
 
+	$name = HandleData::output($name);
+	$pageTitle = "Here's your email signature, $name";
 	include_once 'view/template.php';
 
 } else {
 
+	$pageTitle = 'Create your email signature';
 	include_once 'view/page.php';
 
 }

@@ -32,26 +32,31 @@
 			<label for='name'>Name
 				<input type='text' id='name' name='name' title='Enter name' placeholder='e.g. John Doe' pattern='^([^0-9]*)$' required>
 				<span>Enter valid name</span>
+				<span class='success-validation-check'></span>
 			</label>
 
 			<label for='position'>Job Title
 				<input type='text' id='position' name='position' title='Enter position' placeholder='e.g. Solar Installer' pattern='^([^0-9]*)$' required>
 				<span>Enter valid title</span>
+				<span class='success-validation-check'></span>
 			</label>
 
 			<label for='office_phone'>Office Phone Number (Optional)
 				<input type='tel' id='office_phone' name='office_phone' title='Enter office phone number' placeholder='e.g. 555.123.4567'>
 				<span>Enter valid phone number</span>
+				<span class='success-validation-check'></span>
 			</label>
 
 			<label for='mobile_phone'>Mobile Phone Number (Optional)
 				<input type='tel' id='mobile_phone' name='mobile_phone' title='Enter phone number' placeholder='e.g. 555.123.4567'>
 				<span>Enter valid phone number</span>
+				<span class='success-validation-check'></span>
 			</label>
 
 			<label for='email'>Work Email Address
 				<input type='email' id='email' name='email' title='Enter Shine Solar email address' placeholder='e.g. email@shinesolar.com' pattern='^[A-Za-z0-9._%+-]+@shinesolar.com$' required>
 				<span>Enter valid Shine Solar email address</span>
+				<span class='success-validation-check'></span>
 			</label>
 
 			<label for='logo'>Logo (Shine Solar or Shine Home Energy Solutions)
@@ -63,6 +68,7 @@
 				</select>
 
 				<span>Please select a logo</span>
+				<span class='success-validation-check'></span>
 			</label>
 
 			<button type="submit" title="Generate Email Signature!!!" id="generateButton">Generate Email Signature</button>

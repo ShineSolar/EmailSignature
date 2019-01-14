@@ -1,5 +1,5 @@
 # Shine Solar Email Signature Creator
-Email signatures are often an afterthought (if a thought at all) when you become a new employee at *any* place of work, but they are something (if done well) that you see and think "wow, that's something that I want for myself!". The problem is, these signatures are created with [HTML](https://en.wikipedia.org/wiki/HTML) and [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) and are not easily edited by user who may not know technology very well. This little tool fixes that problem. With the company template designed by our Director of Design, [Nic Moseley](https://nicmoseley.com/) (reachable at nmoseley@shinesolar.com) and the backend logic developed by our Lead Developer, Adam McGurk (reachable at amcgurk@shinesolar.com) this tool allows everyone in the Shine Solar to generate a usuable copy and paste email signature with no need to touch any code at all!
+Email signatures are often an afterthought (if a thought at all) when you become a new employee at *any* place of work, but they are something (if done well) that you see and think "wow, that's something that I want for myself!". The problem is, these signatures are created with [HTML](https://en.wikipedia.org/wiki/HTML) and [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) and are not easily edited by a user who may not know technology very well. This little tool fixes that problem. Using [Progressive Web App](https://en.wikipedia.org/wiki/Progressive_web_applications) technology, we have brought you this app. With the company template designed by our Director of Design, [Nic Moseley](https://nicmoseley.com/) (reachable at nmoseley@shinesolar.com) and the backend logic developed by our Lead Developer, Adam McGurk (reachable at amcgurk@shinesolar.com) this tool allows everyone in the Shine Solar to generate a usuable copy and paste email signature with no need to touch any code at all!
 
 ## Getting Started
 If you want to see the video tutorial of how to do it - [Click Here](https://www.youtube.com/watch?v=2wJQydApwHE) 
@@ -24,14 +24,10 @@ Our versioning scheme goes like this: Major.Minor.Patch
 
 ## TODOs
 
-* **UI/UX** - 
+* Make the 'step' path walkthrough 
+- Step 1 - choose Shine Solar or Shine Home
+- Step 2 - choose email template to work with
+- Step 3 - Fill out form
+- Step 4 - Show the finished signature
 
-* - 
-
-* **Frontend Code** -
-
-* **Backend Code** - 
-
-* **Feature Wishlist** -
-
-* **Server Config** -
+* Figure out a way to make this thing work on your phone

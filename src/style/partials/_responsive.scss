@@ -6,3 +6,10 @@
 		display: flex;
 	}
 }
+
+@media all and (max-width: 500px) {
+	header {
+		img { margin-left: 10px; }
+		.app-add-button { margin-right: 10px; }
+	}
+}

@@ -37,6 +37,7 @@ label {
 		}
 		& ~ span {
 			opacity: 0;
+			display: none;
 			color: $shine-dark-orange;
 			font-size: 14px;
 			margin-top: 3px;

@@ -12,6 +12,22 @@ $main-font: 'Rubik', sans-serif;
 $top-level-width: 95%;
 $border-radius: 2px;
 
+@font-face {
+    font-family: 'Fjalla One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/FjallaOne-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 500;
+	src: url('fonts/Rubik-Regular.ttf') format('truetype');
+  	font-display: swap;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;

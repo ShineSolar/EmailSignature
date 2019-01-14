@@ -1,5 +1,6 @@
 const FILES_TO_CACHE = [
-'https://fonts.googleapis.com/css?family=Fjalla+One|Rubik',
+'/style/fonts/Rubik-Regular.ttf',
+'/style/fonts/FjallaOne-Regular.ttf',
 '/style/style.css',
 '/js/main.js',
 '/assets/loader.svg',
@@ -10,7 +11,8 @@ const FILES_TO_CACHE = [
 '/assets/pwa_icons/shine_pwa_icon.png',
 '/favicon.svg',
 '/assets/check.svg',
-'/favicon.png'
+'/favicon.png',
+'/manifest.webmanifest'
 ];
 
 const CACHE_NAME = `static-cache-v1`;
@@ -29,24 +31,31 @@ self.addEventListener("install", event => {
 	);
 });
 
-self.addEventListener("fetch", event => {
+self.addEventListener("fetch", ev => {
 
 	// Getting URL
-	const url = new URL(event.request.url);
+	const url = new URL(ev.request.url);
 
-/*	// Responding from cache if possible. If not, respond with the network or other cached content
-	if (url.origin === location.origin && url.pathname === "/") {
-		event.respondWith(caches.match("/index.html"));
-		return;
-	} else if (url.pathname === "/tracker/") {
-		event.respondWith(caches.match("/tracker/index.html"));
-		return;
+	if ((url.origin === location.origin && url.pathname === '/') || url.host.search('google') !== -1) {
+
+		// Network only for the index page and the google analytics
+		ev.respondWith(fetch(ev.request));
+
+	} else if (url.pathname === '/style/style.css' || url.pathname === '/js/main.js') {
+
+		// Network falling back to cache for the CSS and JS
+		ev.respondWith(
+			fetch(ev.request).catch(() => {
+				ev.respondWith(caches.match(ev.reqeuest));
+			})
+		);
+
+	} else {
+
+		// Cache only for the images, fonts, and manifest file
+		ev.respondWith(caches.match(ev.request));
+
 	}
-
-	event.respondWith(
-		caches.match(event.request)
-		.then(response => response || fetch(event.request))
-	);*/
 
 });
 

@@ -115,30 +115,35 @@ button, a.button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('/assets/shine-sun.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  &::after {
-    content: '';
-    display: block;
-    height: 30px;
-    width: 30px;
-    background-image: url('/assets/loader.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 60%;
-    animation: spin .8s infinite linear;
+  g#Group-75-Copy {
+    transform-origin: center;
+    animation: backwards-spin 3s infinite linear;
+  }
+  g#Group {
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: spin 3s infinite linear;
   }
 }
 
 @keyframes spin {
 
   0% {
+    transform: translate(35%, 35%) rotate(0deg);
+  }
+  100% {
+    transform: translate(35%, 35%) rotate(360deg);
+  }
+
+}
+
+@keyframes backwards-spin {
+
+  0% {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
 
 }

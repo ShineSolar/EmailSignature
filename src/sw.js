@@ -20,7 +20,7 @@ const FILES_TO_CACHE = [
 const CACHE_NAME = `static-cache-v2`;
 
 // Caching files in the cache
-self.addEventListener("install", event => {
+self.addEventListener('install', event => {
 	event.waitUntil(
 		caches.open(CACHE_NAME)
 		.then(cache => {
@@ -33,7 +33,7 @@ self.addEventListener("install", event => {
 	);
 });
 
-self.addEventListener("fetch", ev => {
+self.addEventListener('fetch', ev => {
 
 	// Getting URL
 	const url = new URL(ev.request.url);

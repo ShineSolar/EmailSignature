@@ -2,6 +2,8 @@
 
 <body>
 
+	<?php include_once 'html_includes/loading.php'; ?>
+
 	<header>
 		<img src='/assets/logo.svg' alt='Shine Solar Logo' title='Shine Solar Logo'>
 	</header>
@@ -30,7 +32,7 @@
 			<p id="formErrorContainer"><?php if (isset($error)) echo $error; ?></p>
 
 			<label for='name'>Name
-				<input type='text' id='name' name='name' title='Enter name' placeholder='e.g. John Doe' pattern='^([^0-9]*)$' required>
+				<input type='text' id='name' name='name' title='Enter name' placeholder='e.g. John Doe' pattern='^([^0-9]*)$' autofocus required>
 				<span>Enter valid name</span>
 				<span class='success-validation-check'></span>
 			</label>

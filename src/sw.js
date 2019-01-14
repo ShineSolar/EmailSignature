@@ -1,24 +1,19 @@
 const FILES_TO_CACHE = [
-'/index.html',
-'/tracker/index.html',
+'https://fonts.googleapis.com/css?family=Fjalla+One|Rubik',
 '/style/style.css',
 '/js/main.js',
-'https://fonts.googleapis.com/css?family=Fjalla+One|Rubik',
-'/assets/LongShineLogo.png',
-'/assets/shineSolarLogo.png',
-'/assets/ShineSunburst.png',
-'/assets/icons/check-mark.svg',
-'/assets/icons/clock.svg',
-'/assets/icons/horizon.svg',
-'/assets/icons/loader.svg',
-'/assets/icons/login-icon.svg',
-'/assets/icons/modal.svg',
-'/assets/icons/phone.svg',
-'/assets/icons/sun.svg'
-//'/error/404.html'
+'/assets/loader.svg',
+'/assets/logo.svg',
+'/assets/shine-sun.svg',
+'/assets/video-icon.svg',
+'/assets/white-video-icon.svg',
+'/assets/pwa_icons/shine_pwa_icon.png',
+'/favicon.svg',
+'/assets/check.svg',
+'/favicon.png'
 ];
 
-const CACHE_NAME = `static-cache-v11-${new Date().getTime()}`;
+const CACHE_NAME = `static-cache-v1`;
 
 // Caching files in the cache
 self.addEventListener("install", event => {
@@ -39,7 +34,9 @@ self.addEventListener("fetch", event => {
 	// Getting URL
 	const url = new URL(event.request.url);
 
-	// Responding from cache if possible. If not, respond with the network or other cached content
+	console.log(url);
+
+/*	// Responding from cache if possible. If not, respond with the network or other cached content
 	if (url.origin === location.origin && url.pathname === "/") {
 		event.respondWith(caches.match("/index.html"));
 		return;
@@ -51,7 +48,7 @@ self.addEventListener("fetch", event => {
 	event.respondWith(
 		caches.match(event.request)
 		.then(response => response || fetch(event.request))
-	);
+	);*/
 
 });
 

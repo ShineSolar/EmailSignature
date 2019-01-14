@@ -97,5 +97,3 @@ if (Http::methodIs('POST')) {
 	include_once 'view/page.php';
 
 }
-
-exit;

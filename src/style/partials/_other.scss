@@ -92,3 +92,40 @@ button, a.button {
     }
   }
 }
+
+.loading-screen {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f3f4f5;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/assets/shine-sun.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  &::after {
+    content: '';
+    display: block;
+    height: 30px;
+    width: 30px;
+    background-image: url('/assets/loader.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 60%;
+    animation: spin .8s infinite linear;
+  }
+}
+
+@keyframes spin {
+
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+
+}

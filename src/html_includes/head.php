@@ -35,4 +35,6 @@
 	<meta name="application-name" content="Shine Solar Email Signature Builder">
 	<meta name="apple-mobile-web-app-title" content="Shine Solar Email Signature Builder">
 
+	<noscript><style>.loading-screen {display: none;}</style></noscript>
+
 </head>

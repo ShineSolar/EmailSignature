@@ -2,6 +2,8 @@
 
 <body>
 
+	<?php include_once 'html_includes/loading.php'; ?>
+
 	<!-- 
 		Start Email Template 
 		TODO: Output this from the database and fill in the variables that way.
@@ -77,6 +79,16 @@
 	<!--/ End Email Template -->
 
 	<?php include_once 'html_includes/mobile_checker.php'; ?>
+
+<script>
+
+	window.onload = function() {
+		setTimeout(function() {
+			document.querySelector('.loading-screen').style.display = 'none';
+		}, 1000);
+	}
+
+</script>
 
 </body>
 </html>

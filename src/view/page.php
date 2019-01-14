@@ -12,9 +12,6 @@
 	<main>
 
 		<!-- 
-			Start expository section 
-			TODO: Progressively add service worker
-			Yeah, I put my HTML todos in HTML comments. What up :)
 			If you're reading this, check out the GitHub repository at https://github.com/ShineSolar/EmailSignature - it's got all the source code!
 		-->
 		<section class='expository'>

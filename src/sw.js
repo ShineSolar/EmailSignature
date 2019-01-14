@@ -48,7 +48,7 @@ self.addEventListener("fetch", ev => {
 		// Network falling back to cache for the CSS and JS
 		ev.respondWith(
 			fetch(ev.request).catch(() => {
-				ev.respondWith(caches.match(ev.reqeuest));
+				ev.respondWith(caches.match(ev.request));
 			})
 		);
 

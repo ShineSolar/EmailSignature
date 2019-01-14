@@ -1,17 +1,17 @@
+// PWA stuff
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker.register("/sw.js").then(reg => {
       // Registration was successful
-      console.log("ServiceWorker registration now successful with scope: ", reg.scope);
+      console.log(`Check out the GitHub Repo for this PWA at: https://github.com/ShineSolar/EmailSignature`);
     }, err => {
       // registration failed :(
-      console.log("ServiceWorker registration failed: ", err);
+      console.log(`ServiceWorker registration failed: ${err}`);
       // log this error
     });
   });
 }
 
-// 
 let deferredPrompt;
 const appAddButton = document.querySelector('.app-add-button');
 
@@ -39,6 +39,7 @@ for (let i=0; i<inputLength; i++) {
 	}, false);
 }
 
+// Loading animation
 window.onload = function() {
 	setTimeout(function() {
 		document.querySelector('.loading-screen').style.display = 'none';

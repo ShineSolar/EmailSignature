@@ -5,11 +5,6 @@
 	<?php include_once 'html_includes/loading.php'; ?>
 
 	<!-- 
-		Start Email Template 
-		TODO: Output this from the database and fill in the variables that way.
-		TODO: Multiple email templates
-		TODO: Use classes in email signatures to clean this up
-		Yeah, I put my HTML todos in HTML comments. What up :)
 		If you're reading this, check out the GitHub repository at https://github.com/ShineSolar/EmailSignature - it's got all the source code!
 	-->
 	

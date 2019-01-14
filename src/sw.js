@@ -12,10 +12,12 @@ const FILES_TO_CACHE = [
 '/favicon.svg',
 '/assets/check.svg',
 '/favicon.png',
-'/manifest.webmanifest'
+'/manifest.webmanifest',
+'https://signatures.shinesolar.com/assets/logos/v2/shine-home-email.png',
+'https://signatures.shinesolar.com/assets/logos/v2/shine-solar-email.png'
 ];
 
-const CACHE_NAME = `static-cache-v1`;
+const CACHE_NAME = `static-cache-v2`;
 
 // Caching files in the cache
 self.addEventListener("install", event => {

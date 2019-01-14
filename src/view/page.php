@@ -25,9 +25,9 @@
 		<!--/ End Expository section -->
 
 		<!-- Start main form -->
-		<form method='POST' action='.' enctype="application/x-www-form-urlencoded">
+		<form method='POST' action='.' enctype='application/x-www-form-urlencoded'>
 
-			<p id="formErrorContainer"><?php if (isset($error)) echo $error; ?></p>
+			<p id='formErrorContainer'><?php if (isset($error)) echo $error; ?></p>
 
 			<label for='name'>Name
 				<input type='text' id='name' name='name' title='Enter name' placeholder='e.g. John Doe' pattern='^([^0-9]*)$' autofocus required>
@@ -71,7 +71,7 @@
 				<span class='success-validation-check'></span>
 			</label>
 
-			<button type="submit" title="Generate Email Signature!!!" id="generateButton">Generate Email Signature</button>
+			<button type='submit' title='Generate Email Signature!!!' id='generateButton'>Generate Email Signature</button>
 
 		</form>
 		<!--/ End Main Form -->

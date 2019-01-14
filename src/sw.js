@@ -34,8 +34,6 @@ self.addEventListener("fetch", event => {
 	// Getting URL
 	const url = new URL(event.request.url);
 
-	console.log(url);
-
 /*	// Responding from cache if possible. If not, respond with the network or other cached content
 	if (url.origin === location.origin && url.pathname === "/") {
 		event.respondWith(caches.match("/index.html"));

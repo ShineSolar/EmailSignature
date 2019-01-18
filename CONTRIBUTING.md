@@ -23,13 +23,6 @@ A clear and concise description of what you expected to happen.
 **Version:**
  - OS w/ version: [e.g. iOS 12]
  - Browser w/ version [e.g. Chrome 70]
- - Node version: [e.g. 10.11.0]
- - npm version: [e.g. 6.4.1]
-
-**Is your issue related to the quality of image compression?**
-Please attach original and output images (you can drag & drop to attach). 
-- Original image 
-- Output image from Squoosh
 
 **Additional context, screenshots, screencasts**
 Add any other context about the problem here.

@@ -29,19 +29,3 @@ Our versioning scheme goes like this: Major.Minor.Patch
 ## Authors
 * **Adam McGurk** - *Development* 
 * **Nic Moseley** - *UX Design*
-
-## TODOs
-
-* Make the 'step' path walkthrough 
-- Step 1 - choose Shine Solar or Shine Home
-- Step 2 - choose email template to work with
-- Step 3 - Fill out form
-- Step 4 - Show the finished signature
-
-* Figure out a way to make this thing work on your phone
-
-* Implement the model with ShinePHP for data validation and HTTP event handling.
-
-* Use the brand css stylesheet and then make the small edits in the current style
-
-* Comment better!

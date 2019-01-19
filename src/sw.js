@@ -1,4 +1,5 @@
 const FILES_TO_CACHE = [
+'/',
 '/style/fonts/Rubik-Regular.ttf',
 '/style/fonts/FjallaOne-Regular.ttf',
 '/style/style.css',
@@ -17,7 +18,7 @@ const FILES_TO_CACHE = [
 'https://signatures.shinesolar.com/assets/logos/v2/shine-solar-email.png'
 ];
 
-const CACHE_NAME = `static-cache-v2`;
+const CACHE_NAME = `static-cache-v3`;
 
 // Caching files in the cache
 self.addEventListener('install', event => {
@@ -38,12 +39,12 @@ self.addEventListener('fetch', ev => {
 	// Getting URL
 	const url = new URL(ev.request.url);
 
-	if ((url.origin === location.origin && url.pathname === '/') || url.host.search('google') !== -1) {
+	if (url.host.search('google') !== -1) {
 
 		// Network only for the index page and the google analytics
 		ev.respondWith(fetch(ev.request));
 
-	} else if (url.pathname === '/style/style.css' || url.pathname === '/js/main.js') {
+	} else if (url.pathname === '/style/style.css' || url.pathname === '/js/main.js' || url.pathname === '/' || url.pathname === '/manifest.webmanifest') {
 
 		// Network falling back to cache for the CSS and JS
 		ev.respondWith(

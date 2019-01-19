@@ -1,4 +1,4 @@
-<section class='no-mobile'>
+<section class='no-mobile' role="region" aria-label="no-mobile">
 	<h1>Darn! :(</h1>
 	<p>Because of the type of signature we're creating, we can't offer a mobile version of this tool...yet :).</p>
 	<p>Until then, open this same site up on your computer and it will work perfectly!</p>

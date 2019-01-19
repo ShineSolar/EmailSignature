@@ -12,21 +12,6 @@ if ("serviceWorker" in navigator) {
   });
 }
 
-let deferredPrompt;
-const appAddButton = document.querySelector('.app-add-button');
-
-window.addEventListener('beforeinstallprompt', function(e) {
-  e.preventDefault();
-  deferredPrompt = e;
-  appAddButton.style.visibility = 'visible';
-});
-
-appAddButton.addEventListener('click', function() {
-  appAddButton.style.visibility = 'hidden';
-  deferredPrompt.prompt();
-  deferredPrompt = null;
-}, false);
-
 // Adding the error validation
 const inputs = document.querySelectorAll('input, select');
 const inputLength = inputs.length;

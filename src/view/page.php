@@ -6,7 +6,6 @@
 
 	<header role="banner">
 		<img src='/assets/logo.svg' alt='Shine Solar Logo' title='Shine Solar Logo'>
-		<button type='button' class='app-add-button'>Get the app!</button>
 	</header>
 
 	<main role="main">

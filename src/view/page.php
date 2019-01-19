@@ -4,17 +4,17 @@
 
 	<?php include_once 'html_includes/loading.php'; ?>
 
-	<header>
+	<header role="banner">
 		<img src='/assets/logo.svg' alt='Shine Solar Logo' title='Shine Solar Logo'>
 		<button type='button' class='app-add-button'>Get the app!</button>
 	</header>
 
-	<main>
+	<main role="main">
 
 		<!-- 
 			If you're reading this, check out the GitHub repository at https://github.com/ShineSolar/EmailSignature - it's got all the source code!
 		-->
-		<section class='expository'>
+		<section class='expository' role="region" aria-label="expository">
 			<h1>Create your email signature</h1>
 			<p>Enter the information below as it should appear on your email signature.</p>
 			<p>Your HTML email signature will be generated. Just copy and paste it into your email signature editor.</p>
@@ -25,7 +25,7 @@
 		<!--/ End Expository section -->
 
 		<!-- Start main form -->
-		<form method='POST' action='.' enctype='application/x-www-form-urlencoded'>
+		<form method='POST' action='.' enctype='application/x-www-form-urlencoded' role="form">
 
 			<p id='formErrorContainer'><?php if (isset($error)) echo $error; ?></p>
 

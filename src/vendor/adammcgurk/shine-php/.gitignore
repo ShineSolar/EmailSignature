@@ -1,0 +1,10 @@
+.*
+~*
+db_details.php
+vendor/
+*.sublime-project
+*.sublime-workspace
+*.log
+*.sql
+!.gitignore
+!.github

@@ -2,7 +2,7 @@
   "lang": "en-us",
   "dir": "ltr",
   "name": "Shine Solar Email Signatures",
-  "description": "This is a small internal app for employees to ",
+  "description": "This is a small internal app for employees to build email signatures",
   "short_name": "Signatures",
   "scope": "/",
   "start_url": "/",

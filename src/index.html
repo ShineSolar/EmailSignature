@@ -1,4 +1,41 @@
-<div class='loading-screen'>
+
+<!doctype html>
+<html lang='en-us' dir='ltr'>
+
+<head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-77926212-23"></script>
+	<script>
+	    window.dataLayer = window.dataLayer || [];
+	    function gtag(){dataLayer.push(arguments);}
+	    gtag('js', new Date());
+
+	    gtag('config', 'UA-77926212-23');
+
+	</script>
+
+	<!-- Base Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/style/style.css">
+	<title>Create your email signature</title>
+
+	<!-- Old Style SEO/IE Tags -->
+	<meta name="description" content="This is the email signature page!">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<!-- Icon links -->
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+	<link rel="icon" href="/favicon.png" type="image/png">
+
+	<noscript><style>.loading-screen {display: none;}</style></noscript>
+
+</head>
+
+<body>
+
+	<div class='loading-screen'>
 	<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
 	    <title>Group 11 Copy 9</title>
@@ -49,3 +86,108 @@
 	    </g>
 	</svg>
 </div>
+	<header role="banner">
+		<img src='/assets/logo.svg' alt='Shine Solar Logo' title='Shine Solar Logo'>
+	</header>
+
+	<main role="main">
+
+		<!-- 
+			If you're reading this, check out the GitHub repository at https://github.com/ShineSolar/EmailSignature - it's got all the source code!
+		-->
+		<section class='expository' role="region" aria-label="expository">
+			<h1>Create your email signature</h1>
+			<p>Enter the information below as it should appear on your email signature.</p>
+			<p>Your HTML email signature will be generated. Just copy and paste it into your email signature editor.</p>
+			<p>
+				<a href='https://www.youtube.com/watch?v=5pGRWepi5TM' title='Watch the video tutorial!' id='videoLink' rel='noopener' target='_blank'>Video Tutorial - How to Create Your Email Signature</a>
+			</p>
+		</section>
+		<!--/ End Expository section -->
+
+		<!-- Start main form -->
+		<form method='POST' action='.' enctype='application/x-www-form-urlencoded' role="form">
+
+			<p id='formErrorContainer'></p>
+
+			<label for='name'>Name
+				<input type='text' id='name' name='name' title='Enter name' placeholder='e.g. John Doe' pattern='^([^0-9]*)$' autofocus required>
+				<span>Enter valid name</span>
+				<span class='success-validation-check'></span>
+			</label>
+
+			<label for='position'>Job Title
+				<input type='text' id='position' name='position' title='Enter position' placeholder='e.g. Solar Installer' pattern='^([^0-9]*)$' required>
+				<span>Enter valid title</span>
+				<span class='success-validation-check'></span>
+			</label>
+
+			<label for='office_phone'>Office Phone Number (Optional)
+				<input type='tel' id='office_phone' name='office_phone' title='Enter office phone number' placeholder='e.g. 555.123.4567'>
+				<span>Enter valid phone number</span>
+				<span class='success-validation-check'></span>
+			</label>
+
+			<label for='mobile_phone'>Mobile Phone Number (Optional)
+				<input type='tel' id='mobile_phone' name='mobile_phone' title='Enter phone number' placeholder='e.g. 555.123.4567'>
+				<span>Enter valid phone number</span>
+				<span class='success-validation-check'></span>
+			</label>
+
+			<label for='email'>Work Email Address
+				<input type='email' id='email' name='email' title='Enter Shine Solar email address' placeholder='e.g. email@shinesolar.com' pattern='^[A-Za-z0-9._%+-]+@shinesolar.com$' required>
+				<span>Enter valid Shine Solar email address</span>
+				<span class='success-validation-check'></span>
+			</label>
+
+			<label for='logo'>Logo (Shine Solar or Shine Home Energy Solutions)
+
+				<select id='logo' name='logo' required>
+					<option class='disabled' value='' selected disabled>Select</option>
+					<option value='solar'>Shine Solar</option>
+					<option value='home'>Shine Home Energy Solutions</option>
+				</select>
+
+				<span>Please select a logo</span>
+				<span class='success-validation-check'></span>
+			</label>
+
+			<button type='submit' title='Generate Email Signature!!!' id='generateButton'>Generate Email Signature</button>
+
+		</form>
+		<!--/ End Main Form -->
+
+	</main>
+
+	<section class='no-mobile' role="region" aria-label="no-mobile">
+	<h1 style='color: #485d6c'>Darn! :(</h1>
+	<p>Because of the type of signature we're creating, we can't offer a mobile version of this tool...yet :).</p>
+	<p>Until then, open this same site up on your computer and it will work perfectly!</p>
+	<a href='https://www.youtube.com/watch?v=5pGRWepi5TM' title='Watch the video tutorial!' style='background-color: #485d6c;' class='button' rel='noopener' target='_blank'><img src='/assets/white-video-icon.svg' title='Watch the tutorial' alt='White box with a white play button in the middle of it'> Click here for instructions</a>
+</section>
+
+<script>
+
+	// Adding the error validation
+	const inputs = document.querySelectorAll('input, select');
+	const inputLength = inputs.length;
+
+	for (let i=0; i<inputLength; i++) {
+		inputs[i].addEventListener('blur', function() {
+			if (!this.classList.contains('blurred')) {
+				this.classList.add('blurred');
+			}
+		}, false);
+	}
+
+	// Loading animation
+	window.onload = function() {
+		setTimeout(function() {
+			document.querySelector('.loading-screen').style.display = 'none';
+		}, 1000);
+	}
+
+</script>
+
+</body>
+</html>

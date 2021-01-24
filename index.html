@@ -115,7 +115,7 @@
 		<!--/ End Expository section -->
 
 		<!-- Start main form -->
-		<form method='POST' action='.' enctype='application/x-www-form-urlencoded' role="form">
+		<form method='POST' action='.' enctype='application/x-www-form-urlencoded' role="form" id="signatureForm">
 
 			<p id='formErrorContainer'></p>
 
@@ -153,8 +153,9 @@
 
 				<select id='logo' name='logo' required>
 					<option class='disabled' value='' selected disabled>Select</option>
-					<option value='solar'>Shine Solar</option>
-					<option value='home'>Shine Home Energy Solutions</option>
+					<option value='https://storage.googleapis.com/luminary_bucket/signatures/shine-solar-long.png'>Shine Solar</option>
+					<option value='https://storage.googleapis.com/luminary_bucket/signatures/shine-home-long.png'>Shine Home</option>
+					<option value="https://storage.googleapis.com/luminary_bucket/signatures/shine-air-long.png">Shine Air</option>
 				</select>
 
 				<span>Please select a logo</span>
@@ -177,28 +178,88 @@
 
 	</section>
 
-<script>
+	<template id="signatureTemplate">
 
-	// Adding the error validation
-	const inputs = document.querySelectorAll('input, select');
-	const inputLength = inputs.length;
+		<table cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;">
 
-	for (let i=0; i<inputLength; i++) {
-		inputs[i].addEventListener('blur', function() {
-			if (!this.classList.contains('blurred')) {
-				this.classList.add('blurred');
+			<!-- Name Row -->
+			<tbody><tr>
+				<td colspan="2" style="padding-bottom: 0px; color: #3F4E58; font-size: 30px; font-weight: 600; line-height: 32px; font-family: trebuchet ms, sans-serif;" data-column="name"></td>
+			</tr>
+			<!--/ End Name Row -->
+
+			<!-- Job Title Row -->
+			<tr>
+				<td colspan="2" style="padding-bottom: 2px; color: #FF6900; font-size: 17px; font-weight: 600;  line-height: 24px; font-family: trebuchet ms, sans-serif;" data-column="position"></td>
+			</tr>
+			<!--/ End Job Title Row -->
+
+			<!-- Mobile Phone Row -->
+			<tr>
+				<td colspan="2" style="padding-bottom: 2px; color: #7D8D9A; font-size: 15px; font-weight: 400; line-height: 19px; font-family: trebuchet ms, sans-serif;">
+					<a href="tel:" style="color: #7D8D9A; text-decoration:none !important;"><span style="color:#B1BBC2 !important; font-family: trebuchet ms, sans-serif;">Mobile: </span><span style="color:#7D8D9A !important; font-family: trebuchet ms, sans-serif;" data-column="mobile_phone"></span>
+					</a>
+				</td>
+			</tr>
+			<!--/ End Mobile Phone Row -->
+
+			<!-- Email Address Row -->
+			<tr>
+				<td colspan="2" style="padding-bottom: 4px; color: #7D8D9A; font-size: 15px; font-weight: 400; line-height: 19px; font-family: trebuchet ms, sans-serif; text-decoration:none;">
+					<a href="mailto:" style="color: #7D8D9A; text-decoration-color:#ffffff !important; text-decoration:none !important;">
+						<span style="color:#B1BBC2 !important; font-family: trebuchet ms, sans-serif;">Email: </span><span style="color:#7D8D9A !important; font-family: trebuchet ms, sans-serif;" data-column="email"></span>
+					</a>
+				</td>
+			</tr>
+			<!--/ End Email Address Row -->
+			
+			<!-- Logo Row -->
+			<tr>
+				<td>
+					<a href="https://shinesolar.com" target="_blank" rel="noopener">
+						<img src="" width="400px" alt="Logo they picked" title="ShineSolar.com" data-logo>
+					</a>
+				</td>
+			</tr>
+			<!--/ End Logo Row -->
+		
+		</tbody>
+
+	</table>
+		
+	</template>
+
+	<script>
+
+		// Adding the error validation
+		const inputs = document.querySelectorAll('input, select');
+		const inputLength = inputs.length;
+
+		for (let i=0; i<inputLength; i++) {
+			inputs[i].addEventListener('blur', function() {
+				if (!this.classList.contains('blurred')) {
+					this.classList.add('blurred');
+				}
+			}, false);
+		}
+
+		// Loading animation
+		window.onload = function() {
+			setTimeout(function() {
+				document.querySelector('.loading-screen').style.display = 'none';
+			}, 1000);
+		}
+
+		const signatureForm = document.getElementById("signatureForm");
+		signatureForm.addEventListener("submit", (ev) => {
+
+			if (signatureForm.checkValidity()) {
+
 			}
+
 		}, false);
-	}
 
-	// Loading animation
-	window.onload = function() {
-		setTimeout(function() {
-			document.querySelector('.loading-screen').style.display = 'none';
-		}, 1000);
-	}
-
-</script>
+	</script>
 
 </body>
 </html>
